@@ -25,6 +25,12 @@ a{color:inherit;text-decoration:none}
 .pill:hover{border-color:#ffce3a;color:#ffce3a}
 .toclink:hover{color:#ffce3a;border-left-color:#ffce3a}
 
+/* License-page contents sidebar: drop the sticky once it stacks into a
+   single column, otherwise it pins over the body text on mobile. */
+@media (max-width: 700px){
+  .toc{position:static;max-width:none;top:auto;margin-bottom:8px}
+}
+
 /* Respect reduced-motion: stop the loops, and reveal anything that fades in */
 @media (prefers-reduced-motion: reduce){
   .anim-road,.anim-drive{animation:none !important}
