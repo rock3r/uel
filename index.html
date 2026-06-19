@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Unenshittifiable License (UEL)</title>
+<meta name="description" content="A source-available license for software that belongs to the commons. Study it, fork it, self-host it, improve it — just don't turn it into a toll booth.">
+<meta property="og:title" content="The Unenshittifiable License (UEL)">
+<meta property="og:description" content="A source-available license for software that belongs to the commons. Just don't turn it into a toll booth.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/goose_t.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div style="min-height:100vh;background:#13121b">
+
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(19,18,27,.86);backdrop-filter:blur(10px);border-bottom:2px solid #26242f">
+    <div style="max-width:1180px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px">
+        <img src="assets/goose_t.png" alt="UEL warden goose" onclick="honk(event)" title="Honk!" style="height:38px;width:auto;cursor:pointer">
+        <span style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em">UEL</span>
+      </a>
+      <div class="lab" style="display:flex;align-items:center;gap:6px;font-size:12px;letter-spacing:.1em">
+        <a href="license.html" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">License</a>
+        <a href="compare.html" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">Compare</a>
+        <a href="#faq" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">FAQ</a>
+        <a href="license.html" class="btn-primary-sm" style="margin-left:6px;padding:10px 16px;background:#ffce3a;color:#13121b;font-weight:800;letter-spacing:.04em;border-radius:8px;box-shadow:3px 3px 0 #0a0912;transition:transform .15s,box-shadow .15s">Read the license</a>
+      </div>
+    </div>
+  </nav>
+
+  <header style="position:relative;background-image:radial-gradient(rgba(255,255,255,.045) 1.2px,transparent 1.2px);background-size:24px 24px;background-position:center">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(46px,7vw,92px) 24px clamp(34px,4vw,52px)">
+      <div class="lab" style="opacity:0;animation:fadeUp .6s .04s both;font-size:12.5px;letter-spacing:.18em;color:#8a849a"><span style="color:#ffce3a">UEL v1.0</span> &nbsp;·&nbsp; Source-available license</div>
+      <h1 style="opacity:0;animation:fadeUp .6s .1s both;font-family:'Gabarito',sans-serif;font-weight:800;font-size:clamp(2.9rem,8.4vw,6.6rem);line-height:.92;letter-spacing:-.025em;margin:22px 0 0;text-wrap:balance">
+        <span style="background:#ffce3a;color:#13121b;padding:0 .12em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone">Unenshittifiable</span><br>License
+      </h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(20px,4vw,56px);margin-top:30px;align-items:end">
+        <p style="opacity:0;animation:fadeUp .6s .18s both;font-size:clamp(1.15rem,1.9vw,1.5rem);line-height:1.4;color:#e7e3d6;margin:0;max-width:24ch;font-weight:500">A source-available license for software that belongs to the commons.</p>
+        <div style="opacity:0;animation:fadeUp .6s .24s both">
+          <p style="font-size:1.02rem;line-height:1.75;color:#a59fb2;margin:0">Study it. Fork it. Self-host it. Improve it.<br><span style="color:#f2efe6;font-weight:700">Just don't turn it into a toll booth.</span></p>
+          <div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:22px">
+            <a href="license.html" class="btn-primary" style="padding:14px 24px;background:#ffce3a;color:#13121b;font-weight:800;font-size:1.02rem;border-radius:8px;box-shadow:4px 4px 0 #0a0912;transition:transform .15s,box-shadow .15s">Read the License →</a>
+            <a href="#faq" class="btn-ghost" style="padding:14px 22px;background:transparent;color:#f2efe6;font-weight:700;font-size:1.02rem;border:2px solid #44414f;border-radius:8px;transition:.18s">Is it right for my project?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative">
+      <div aria-hidden="true" style="height:58px;background:#1c1b26;border-top:2px solid #2b2935;border-bottom:2px solid #2b2935;position:relative;overflow:hidden">
+        <div class="anim-road" style="position:absolute;top:50%;left:-128px;right:-128px;height:5px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,#ffce3a 0 40px,transparent 40px 88px)"></div>
+      </div>
+      <img src="assets/goose_car.png" alt="The warden goose, out for a drive" class="anim-drive" style="position:absolute;top:7px;left:0;height:42px;width:auto;z-index:5;pointer-events:none">
+    </div>
+
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(26px,4vw,44px) 24px clamp(34px,5vw,56px)">
+      <div style="border:2px solid #2e2c3a;border-radius:12px;overflow:hidden;background:#1a1924;box-shadow:8px 8px 0 #0d0c15">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 16px;border-bottom:2px solid #2e2c3a;background:#16151f">
+          <span class="lab" style="font-size:11px;letter-spacing:.14em;color:#8a849a">FIG.1 — The commons, in use</span>
+          <span class="lab" style="font-size:11px;letter-spacing:.14em;color:#ff8b7d">Toll booth ✕</span>
+        </div>
+        <img src="assets/hero_scene.png" alt="A colourful public road winding through a friendly neighbourhood — people, cyclists, students and cute internet creatures sharing the space, an open gate, forking paths, and a vine-covered toll booth crossed out in the distance" style="display:block;width:100%;height:clamp(300px,40vw,540px);object-fit:cover">
+      </div>
+    </div>
+  </header>
+
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(40px,6vw,80px) 24px">
+    <div class="lab" style="font-size:12.5px;letter-spacing:.14em;color:#8a849a;margin-bottom:12px"><span style="color:#ffce3a">§02</span>&nbsp;&nbsp;Permits</div>
+    <h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.04;letter-spacing:-.02em;margin:0 0 34px;max-width:20ch">Bring the whole community. Leave the cash register at home.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:22px">
+      <div style="border:2px solid #2a4a3c;border-radius:12px;overflow:hidden;background:#161d1a">
+        <div class="lab" style="background:#57c98a;color:#0c241a;font-size:13px;letter-spacing:.14em;padding:12px 18px">Permitted</div>
+        <ul style="list-style:none;margin:0;padding:6px 0">
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(87,201,138,.14);font-size:1.06rem;color:#e0ede6"><span style="flex:none;width:22px;height:22px;background:#57c98a;color:#0c241a;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:14px">✓</span>Read the code</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(87,201,138,.14);font-size:1.06rem;color:#e0ede6"><span style="flex:none;width:22px;height:22px;background:#57c98a;color:#0c241a;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:14px">✓</span>Fork the code</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(87,201,138,.14);font-size:1.06rem;color:#e0ede6"><span style="flex:none;width:22px;height:22px;background:#57c98a;color:#0c241a;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:14px">✓</span>Modify the code</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(87,201,138,.14);font-size:1.06rem;color:#e0ede6"><span style="flex:none;width:22px;height:22px;background:#57c98a;color:#0c241a;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:14px">✓</span>Self-host it, forever</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(87,201,138,.14);font-size:1.06rem;color:#e0ede6"><span style="flex:none;width:22px;height:22px;background:#57c98a;color:#0c241a;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:14px">✓</span>Use it internally at work</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(87,201,138,.14);font-size:1.06rem;color:#e0ede6"><span style="flex:none;width:22px;height:22px;background:#57c98a;color:#0c241a;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:14px">✓</span>Offer consulting around it</li>
+        </ul>
+      </div>
+      <div style="border:2px solid #4d2e30;border-radius:12px;overflow:hidden;background:#1e1618">
+        <div class="lab" style="background:#ff8b7d;color:#2e0f0c;font-size:13px;letter-spacing:.14em;padding:12px 18px">Not permitted</div>
+        <ul style="list-style:none;margin:0;padding:6px 0">
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(255,139,125,.14);font-size:1.06rem;color:#f0dedd"><span style="flex:none;width:22px;height:22px;background:#ff8b7d;color:#2e0f0c;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:13px">✕</span>Launch a paid clone</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(255,139,125,.14);font-size:1.06rem;color:#f0dedd"><span style="flex:none;width:22px;height:22px;background:#ff8b7d;color:#2e0f0c;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:13px">✕</span>Sell access to it</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(255,139,125,.14);font-size:1.06rem;color:#f0dedd"><span style="flex:none;width:22px;height:22px;background:#ff8b7d;color:#2e0f0c;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:13px">✕</span>Create a paid “Pro” edition</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(255,139,125,.14);font-size:1.06rem;color:#f0dedd"><span style="flex:none;width:22px;height:22px;background:#ff8b7d;color:#2e0f0c;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:13px">✕</span>Bundle it into a commercial product</li>
+          <li style="display:flex;gap:13px;align-items:center;padding:12px 18px;border-top:1px solid rgba(255,139,125,.14);font-size:1.06rem;color:#f0dedd"><span style="flex:none;width:22px;height:22px;background:#ff8b7d;color:#2e0f0c;border-radius:5px;display:grid;place-items:center;font-weight:800;font-size:13px">✕</span>Impersonate the original project</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div aria-hidden="true" style="height:58px;background:#1c1b26;border-top:2px solid #2b2935;border-bottom:2px solid #2b2935;position:relative;overflow:hidden">
+    <div class="anim-road" style="position:absolute;top:50%;left:-128px;right:-128px;height:5px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,#ffce3a 0 40px,transparent 40px 88px)"></div>
+  </div>
+
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(50px,7vw,96px) 24px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(30px,5vw,68px);align-items:start">
+      <div>
+        <div class="lab" style="font-size:12.5px;letter-spacing:.14em;color:#8a849a;margin-bottom:14px"><span style="color:#ffce3a">§03</span>&nbsp;&nbsp;Why</div>
+        <h2 style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:clamp(2.1rem,4.6vw,3.8rem);line-height:1;letter-spacing:-.025em;margin:0">The road is public.<br>The toll booth is&nbsp;not.</h2>
+        <p style="font-size:1.12rem;line-height:1.7;color:#c2bdcf;margin:26px 0 0">UEL exists for software that should stay useful public infrastructure — the kind of thing a school, a club, a city, or a stranger on the internet can pick up and run without asking anyone's permission.</p>
+        <p style="font-size:1.12rem;line-height:1.7;color:#c2bdcf;margin:15px 0 0">It protects the freedom to learn, modify, and self-host, while keeping the commons out of the hands of anyone who'd fence it off and charge for the view.</p>
+        <p style="font-size:1.18rem;line-height:1.55;color:#f2efe6;font-weight:700;margin:22px 0 0">The goal isn't to maximise profit. The goal is to keep good things good.</p>
+      </div>
+      <div style="border:2px solid #2e2c3a;border-radius:12px;background:#16151f">
+        <div style="display:flex;gap:16px;padding:18px 20px;border-bottom:1px solid #26242f;align-items:baseline"><span style="color:#57c98a;font-weight:800;font-size:18px">→</span><div><div class="lab" style="color:#f2efe6;font-size:13px;letter-spacing:.1em">Open to everyone</div><div style="color:#8a849a;font-size:13.5px;margin-top:4px">read · fork · run · improve</div></div></div>
+        <div style="display:flex;gap:16px;padding:18px 20px;border-bottom:1px solid #26242f;align-items:baseline"><span style="color:#57c98a;font-weight:800;font-size:18px">→</span><div><div class="lab" style="color:#f2efe6;font-size:13px;letter-spacing:.1em">Maintained together</div><div style="color:#8a849a;font-size:13.5px;margin-top:4px">improvements flow back to all</div></div></div>
+        <div style="display:flex;gap:16px;padding:18px 20px;align-items:baseline"><span style="color:#ff8b7d;font-weight:800;font-size:18px">✕</span><div><div class="lab" style="color:#f2efe6;font-size:13px;letter-spacing:.1em">No enclosure</div><div style="color:#8a849a;font-size:13.5px;margin-top:4px">no paywalls on the commons</div></div></div>
+      </div>
+    </div>
+    <div style="margin-top:clamp(36px,5vw,56px);border:2px solid #2e2c3a;border-radius:12px;overflow:hidden;background:#1a1924;box-shadow:8px 8px 0 #0d0c15">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 16px;border-bottom:2px solid #2e2c3a;background:#16151f">
+        <span class="lab" style="font-size:11px;letter-spacing:.14em;color:#8a849a">FIG.2 — The toll booth, having lost</span>
+        <span class="lab" style="font-size:11px;letter-spacing:.14em;color:#ff8b7d">Case closed ✕</span>
+      </div>
+      <div style="background:repeating-linear-gradient(135deg,#1f1d2a,#1f1d2a 13px,#1b1926 13px,#1b1926 26px);padding:clamp(22px,3vw,40px) clamp(20px,5vw,72px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px">
+        <img src="assets/goose_clean.png" alt="The warden goose strolling away with a wrench over its shoulder, whistling" style="height:clamp(170px,24vw,310px);width:auto;filter:drop-shadow(0 12px 16px rgba(0,0,0,.45))">
+        <img src="assets/booth_clean.png" alt="The toll booth, crossed-out and crumbling" style="height:clamp(160px,22vw,288px);width:auto;filter:drop-shadow(0 12px 16px rgba(0,0,0,.45))">
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(20px,3vw,40px) 24px clamp(50px,7vw,90px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(34px,5vw,72px);align-items:center">
+      <div>
+        <div class="lab" style="font-size:12.5px;letter-spacing:.14em;color:#8a849a;margin-bottom:14px"><span style="color:#ffce3a">§04</span>&nbsp;&nbsp;The warden</div>
+        <h2 style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:clamp(1.9rem,4vw,3.2rem);line-height:1.02;letter-spacing:-.02em;margin:0">A cheerful community goose runs this place.</h2>
+        <p style="font-size:1.1rem;line-height:1.7;color:#c2bdcf;margin:24px 0 0">Not a corporate mascot. Not a product mascot. A guardian of the commons — slightly chaotic, fundamentally benevolent. It opens gates, points people toward interesting side roads, and helps maintain public spaces.</p>
+        <p style="font-size:1.1rem;line-height:1.7;color:#c2bdcf;margin:15px 0 0">It has a strong personal dislike of toll booths, paywalls, dark patterns, and artificial barriers.</p>
+        <p style="font-size:1.18rem;line-height:1.5;color:#f2efe6;font-weight:700;margin:20px 0 0">The goose never attacks people. The goose only attacks toll booths.</p>
+        <div style="margin-top:28px;border-left:5px solid #ffce3a;padding:2px 0 2px 22px;max-width:44ch">
+          <p style="font-family:'Gabarito',sans-serif;font-weight:600;font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.22;margin:0">"You built something useful. Why are you charging €19 a month for the privilege of existing near it?"</p>
+          <p class="lab" style="font-size:12px;letter-spacing:.1em;color:#8a849a;margin:12px 0 0">— the goose, mid-honk · HOOONK</p>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center">
+        <div style="position:relative;width:min(100%,330px)">
+          <img src="assets/goose_t.png" alt="The warden goose, pointing at the directions" style="position:absolute;top:-118px;right:-18px;height:158px;width:auto;z-index:2;filter:drop-shadow(0 8px 12px rgba(0,0,0,.5))">
+          <div style="border:3px solid #ffce3a;border-radius:14px;background:#16151f;box-shadow:9px 9px 0 #0d0c15;padding:30px 26px 26px;margin-top:18px">
+            <div class="lab" style="text-align:center;font-size:11px;letter-spacing:.18em;color:#8a849a;padding-bottom:16px;border-bottom:2px dashed #34323f">Public road · all welcome</div>
+            <div style="display:flex;flex-direction:column;gap:4px;margin-top:16px">
+              <div style="display:flex;align-items:center;gap:16px;padding:10px 4px"><span style="font-family:'Gabarito',sans-serif;font-weight:900;font-size:1.7rem;color:#ffce3a;width:30px;text-align:center">←</span><span style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.5rem;white-space:nowrap">Fork it</span></div>
+              <div style="display:flex;align-items:center;gap:16px;padding:10px 4px;border-top:1px solid #26242f"><span style="font-family:'Gabarito',sans-serif;font-weight:900;font-size:1.7rem;color:#ffce3a;width:30px;text-align:center">↑</span><span style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.5rem;white-space:nowrap">Self-host it</span></div>
+              <div style="display:flex;align-items:center;gap:16px;padding:10px 4px;border-top:1px solid #26242f"><span style="font-family:'Gabarito',sans-serif;font-weight:900;font-size:1.7rem;color:#ffce3a;width:30px;text-align:center">→</span><span style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.5rem;white-space:nowrap">Improve it</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div aria-hidden="true" style="height:58px;background:#1c1b26;border-top:2px solid #2b2935;border-bottom:2px solid #2b2935;position:relative;overflow:hidden">
+    <div class="anim-road" style="position:absolute;top:50%;left:-128px;right:-128px;height:5px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,#ffce3a 0 40px,transparent 40px 88px)"></div>
+  </div>
+
+  <section id="faq" style="max-width:840px;margin:0 auto;padding:clamp(50px,7vw,90px) 24px">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:32px">
+      <div>
+        <div class="lab" style="font-size:12.5px;letter-spacing:.14em;color:#8a849a;margin-bottom:12px"><span style="color:#ffce3a">§05</span>&nbsp;&nbsp;Is UEL right for my project?</div>
+        <h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:clamp(2rem,3.8vw,3rem);line-height:1.02;letter-spacing:-.02em;margin:0">The honest answers.</h2>
+      </div>
+      <img src="assets/goose_point.png" alt="The warden goose, ready for your questions" style="height:clamp(94px,12vw,150px);width:auto;flex:none;filter:drop-shadow(0 8px 12px rgba(0,0,0,.4))">
+    </div>
+    <div style="border:2px solid #2a2834;border-radius:12px;overflow:hidden;background:#16151f">
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Can I self-host it?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">Yes — that's the whole point. Spin it up on your own box, your school's server, your community's spare laptop in a closet. Forever, for free, no permission slip required.</div>
+      </div>
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Can my company use it internally?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">Absolutely. Run it for your team, your staff, your internal tools and dashboards. Internal use is just… use. The commons doesn't check your org chart.</div>
+      </div>
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Can I charge for consulting?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">Go for it. Charge to install it, configure it, teach it, support it, customise it. You're selling your time and your expertise — not fencing off the commons.</div>
+      </div>
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Can I launch a SaaS?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">Not a paid one built on UEL software. You're welcome to run a free, public instance — but you can't put the public road behind a toll booth and charge admission.</div>
+      </div>
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Can I make a paid version?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">No paid editions, no “Pro” tier, no commercial fork held just out of reach. Improvements belong back in the commons, where everyone gets them — not behind a card reader.</div>
+      </div>
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Is this open source?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">It's source-available. You get the source and the freedom to read, fork, run, and improve it — minus the freedom to monetise the commons. Think of it as open-hearted.</div>
+      </div>
+
+      <div data-faq data-open="0" style="border-top:1px solid #24222e">
+        <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;background:none;border:none;color:#f2efe6;cursor:pointer;text-align:left;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1.12rem">
+          Why does this exist?
+          <span data-faq-sign style="flex:none;width:28px;height:28px;border-radius:7px;background:#221f2c;color:#cfc9da;display:grid;place-items:center;font-size:1.3rem;font-weight:700;font-family:'Gabarito',sans-serif">+</span>
+        </button>
+        <div data-faq-answer style="display:none;padding:0 22px 22px;color:#bdb7c9;font-size:1.05rem;line-height:1.65">Because too many good, useful things get bought, paywalled, and quietly made worse. UEL is a small fence around the freedoms that matter — built so good things can stay good. The goose insisted.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer style="border-top:2px solid #26242f;background:#100f17">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(46px,6vw,80px) 24px clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start">
+        <p style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:clamp(1.7rem,4.2vw,3rem);line-height:1.08;letter-spacing:-.02em;margin:0;max-width:16ch;text-wrap:balance">Software can be free without becoming <span style="background:#ffce3a;color:#13121b;padding:0 .1em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone">free real estate.</span></p>
+        <div style="display:inline-flex;flex-direction:column;align-items:center;gap:3px;border:2px solid #3a3747;border-radius:12px;padding:16px 20px;background:#16151f;transform:rotate(-3deg)">
+          <img src="assets/goose_t.png" alt="" style="height:54px;width:auto">
+          <span class="lab" style="font-size:10.5px;letter-spacing:.18em;color:#57c98a;margin-top:6px">Open gate</span>
+          <span class="lab" style="font-size:10.5px;letter-spacing:.18em;color:#ffce3a">Open road</span>
+          <span class="lab" style="font-size:10.5px;letter-spacing:.18em;color:#ff8b7d">No toll booth</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;margin-top:40px;padding-top:24px;border-top:1px solid #24222e">
+        <div style="display:flex;align-items:center;gap:10px;font-family:'Gabarito',sans-serif;font-weight:800;font-size:18px"><img src="assets/goose_t.png" alt="" style="height:32px;width:auto">UEL v1.0</div>
+        <div class="lab" style="display:flex;gap:8px;flex-wrap:wrap;font-size:11.5px;letter-spacing:.1em">
+          <a href="license.html" class="pill" style="padding:9px 13px;border:1px solid #2e2c3a;border-radius:7px;color:#bdb8c9;transition:.18s">License</a>
+          <a href="compare.html" class="pill" style="padding:9px 13px;border:1px solid #2e2c3a;border-radius:7px;color:#bdb8c9;transition:.18s">Compare</a>
+          <a href="#faq" class="pill" style="padding:9px 13px;border:1px solid #2e2c3a;border-radius:7px;color:#bdb8c9;transition:.18s">FAQ</a>
+        </div>
+      </div>
+      <p style="font-size:13.5px;color:#6f6982;margin:22px 0 0;line-height:1.8">No cookies · no trackers · no analytics · no newsletter pop-ups · no growth hacks.<br>This site is itself shared under the UEL. The toll booth lost — it's a public library now.<br><br>Yes, this was built with the help of AI. Got handmade code or illustrations you'd like to see here instead — for free, and under the UEL, of course? The goose would be delighted.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

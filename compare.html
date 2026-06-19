@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How does UEL compare? — The Unenshittifiable License</title>
+<meta name="description" content="Every license is really just a one-liner about what it cares about. MIT, GPL, AGPL and UEL, compared honestly.">
+<meta property="og:title" content="How does UEL compare?">
+<meta property="og:description" content="MIT, GPL, AGPL and UEL — the same family, different house rules.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/goose_t.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div style="min-height:100vh;background:#13121b">
+
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(19,18,27,.86);backdrop-filter:blur(10px);border-bottom:2px solid #26242f">
+    <div style="max-width:1180px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px"><img src="assets/goose_t.png" alt="UEL warden goose" onclick="honk(event)" title="Honk!" style="height:38px;width:auto;cursor:pointer"><span style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em">UEL</span></a>
+      <div class="lab" style="display:flex;align-items:center;gap:6px;font-size:12px;letter-spacing:.1em">
+        <a href="index.html" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">Home</a>
+        <a href="license.html" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">License</a>
+      </div>
+    </div>
+  </nav>
+
+  <header style="position:relative;background-image:radial-gradient(rgba(255,255,255,.045) 1.2px,transparent 1.2px);background-size:24px 24px;background-position:center;text-align:center">
+    <div style="max-width:920px;margin:0 auto;padding:clamp(42px,6vw,78px) 24px clamp(28px,3vw,40px)">
+      <div class="lab" style="opacity:0;animation:fadeUp .6s both;font-size:12.5px;letter-spacing:.18em;color:#8a849a">Same family &nbsp;·&nbsp; <span style="color:#ffce3a">different house rules</span></div>
+      <h1 style="opacity:0;animation:fadeUp .6s .08s both;font-family:'Gabarito',sans-serif;font-weight:800;font-size:clamp(2.5rem,6vw,4.6rem);line-height:.98;letter-spacing:-.025em;margin:20px 0 0">How does UEL compare?</h1>
+      <p style="opacity:0;animation:fadeUp .6s .16s both;font-size:1.18rem;color:#bdb7c9;margin:16px auto 0;max-width:52ch;line-height:1.6">Every license is really just a one-liner about what it cares about. Here are four of them, honestly.</p>
+    </div>
+    <div aria-hidden="true" style="height:42px;background:#1c1b26;border-top:2px solid #2b2935;border-bottom:2px solid #2b2935;position:relative;overflow:hidden"><div class="anim-road" style="position:absolute;top:50%;left:-128px;right:-128px;height:5px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,#ffce3a 0 40px,transparent 40px 88px)"></div></div>
+  </header>
+
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(34px,5vw,56px) 24px clamp(16px,2vw,24px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:16px">
+      <div style="border:2px solid #27384d;border-radius:12px;overflow:hidden;background:#16151f;min-width:0">
+        <div style="height:6px;background:#6ba8ff"></div>
+        <div style="padding:20px">
+          <div class="lab" style="font-size:10.5px;letter-spacing:.14em;color:#6ba8ff">Permissive</div>
+          <div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.5rem;margin:8px 0 12px">MIT</div>
+          <p style="font-size:1.02rem;line-height:1.45;color:#d3cee0;margin:0">"Do whatever."</p>
+        </div>
+      </div>
+      <div style="border:2px solid #352f4d;border-radius:12px;overflow:hidden;background:#16151f;min-width:0">
+        <div style="height:6px;background:#b6a4ff"></div>
+        <div style="padding:20px">
+          <div class="lab" style="font-size:10.5px;letter-spacing:.14em;color:#b6a4ff">Copyleft</div>
+          <div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.5rem;margin:8px 0 12px">GPL</div>
+          <p style="font-size:1.02rem;line-height:1.45;color:#d3cee0;margin:0">"Share your changes."</p>
+        </div>
+      </div>
+      <div style="border:2px solid #234034;border-radius:12px;overflow:hidden;background:#16151f;min-width:0">
+        <div style="height:6px;background:#57c98a"></div>
+        <div style="padding:20px">
+          <div class="lab" style="font-size:10.5px;letter-spacing:.14em;color:#57c98a">Network copyleft</div>
+          <div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.5rem;margin:8px 0 12px">AGPL</div>
+          <p style="font-size:1.02rem;line-height:1.45;color:#d3cee0;margin:0">"Share your network changes too."</p>
+        </div>
+      </div>
+      <div style="border:2px solid #4d4322;border-radius:12px;overflow:hidden;background:#16151f;min-width:0">
+        <div style="height:6px;background:#ffce3a"></div>
+        <div style="padding:20px">
+          <div class="lab" style="font-size:10.5px;letter-spacing:.14em;color:#ffce3a">Commons-protective</div>
+          <div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.5rem;margin:8px 0 12px">UEL</div>
+          <p style="font-size:1.02rem;line-height:1.45;color:#d3cee0;margin:0">"Share the commons. Don't monetise the commons."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(16px,2vw,28px) 24px clamp(50px,7vw,84px)">
+    <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:22px">
+      <span class="lab" style="display:inline-flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.1em;color:#a59fb2"><span style="color:#57c98a;font-size:1.1rem">✓</span>Allowed</span>
+      <span class="lab" style="display:inline-flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.1em;color:#a59fb2"><span style="color:#ffb86b;font-size:1.1rem">~</span>Conditional</span>
+      <span class="lab" style="display:inline-flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.1em;color:#a59fb2"><span style="color:#ff8b7d;font-size:1.1rem">✕</span>Not allowed</span>
+    </div>
+
+    <div style="overflow-x:auto;border:2px solid #2a2834;border-radius:14px;background:#16151f">
+      <div style="min-width:700px">
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr)">
+          <div class="lab" style="padding:18px 22px;font-size:11px;letter-spacing:.12em;color:#6f6982;display:flex;align-items:flex-end">Can you…</div>
+          <div style="padding:16px 8px;text-align:center;background:rgba(107,168,255,.06);border-bottom:3px solid #6ba8ff"><div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.15rem;color:#6ba8ff">MIT</div></div>
+          <div style="padding:16px 8px;text-align:center;background:rgba(150,130,255,.06);border-bottom:3px solid #b6a4ff"><div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.15rem;color:#b6a4ff">GPL</div></div>
+          <div style="padding:16px 8px;text-align:center;background:rgba(87,201,138,.06);border-bottom:3px solid #57c98a"><div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.15rem;color:#57c98a">AGPL</div></div>
+          <div style="padding:16px 8px;text-align:center;background:rgba(255,206,58,.08);border-bottom:3px solid #ffce3a"><div style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:1.15rem;color:#ffce3a">UEL</div></div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Read &amp; study the source</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:rgba(255,206,58,.07)">✓</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Fork &amp; modify it</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:rgba(255,206,58,.07)">✓</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Self-host it free, forever</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:rgba(255,206,58,.07)">✓</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Use it internally at a company</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:rgba(255,206,58,.07)">✓</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Charge for consulting &amp; support</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:rgba(255,206,58,.07)">✓</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Keep your improvements private</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ffb86b;background:transparent">~</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:transparent">✕</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:rgba(255,206,58,.07)">✕</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Launch a paid SaaS or clone</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:rgba(255,206,58,.07)">✕</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Ship a paid edition or product</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:transparent">✓</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:rgba(255,206,58,.07)">✕</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);align-items:center;border-top:1px solid #221f2c">
+          <div style="padding:15px 22px;font-size:1.02rem;color:#e3dff0;font-weight:500">Protect the project's identity</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:transparent">✕</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:transparent">✕</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#ff8b7d;background:transparent">✕</div>
+          <div style="padding:15px 8px;text-align:center;font-size:1.35rem;font-weight:800;color:#57c98a;background:rgba(255,206,58,.07)">✓</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative;margin-top:clamp(60px,7vw,92px);padding:32px;border:2px solid #ffce3a;border-radius:14px;background:#16151f;box-shadow:7px 7px 0 #0d0c15;text-align:center;width:80%;height:292px;left:10%">
+      <img src="assets/goose_t.png" alt="The warden goose" style="position:absolute;top:-12px;left:-113px;height:293px;width:252px;filter:drop-shadow(0 8px 12px rgba(0,0,0,.5))">
+      <p style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:clamp(1.4rem,2.8vw,2.1rem);line-height:1.32;margin:14px 0 0">The others ask <span style="color:#6ba8ff">how you share</span>.<br>UEL also asks that you<br><span style="background:#ffce3a;color:#13121b;padding:1px .12em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone">don't sell the commons.</span></p>
+      <a href="license.html" class="btn-primary" style="display:inline-flex;white-space:nowrap;margin-top:24px;padding:14px 24px;background:#ffce3a;color:#13121b;font-weight:800;border-radius:8px;box-shadow:4px 4px 0 #0a0912;transition:transform .15s,box-shadow .15s">Read the License →</a>
+    </div>
+
+  </section>
+
+  <footer style="border-top:2px solid #26242f;background:#100f17">
+    <div style="max-width:1180px;margin:0 auto;padding:40px 24px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center">
+      <p style="font-size:13.5px;color:#6f6982;margin:0;line-height:1.8">Not legal advice — just a friendly map. Read each license for the fine print.</p>
+      <a href="index.html" class="lab pill" style="font-size:12px;letter-spacing:.1em;padding:10px 16px;border:1px solid #2e2c3a;border-radius:7px;color:#bdb8c9;transition:.18s">← Back to the park</a>
+    </div>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

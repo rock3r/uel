@@ -1,0 +1,32 @@
+/* The Unenshittifiable License — site styles */
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#13121b;color:#f2efe6;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:#ffce3a;color:#13121b}
+a{color:inherit;text-decoration:none}
+.lab{font-family:'Hanken Grotesk',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes roadmove{to{background-position:-88px 0}}
+@keyframes drive{0%{transform:translateX(-280px)}27%{transform:translateX(calc(100vw + 300px))}100%{transform:translateX(calc(100vw + 300px))}}
+@keyframes nudge{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-8px) rotate(6deg)}}
+
+/* Animated dividers */
+.anim-road{animation:roadmove 6s linear infinite}
+.anim-drive{animation:drive 30s linear infinite;will-change:transform}
+
+/* Hover behaviours (were `style-hover` in the design prototype) */
+.navlink{transition:.18s}
+.navlink:hover{background:#221f2c;color:#fff}
+.btn-primary:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #0a0912}
+.btn-primary-sm:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 #0a0912}
+.btn-ghost:hover{border-color:#ffce3a;color:#ffce3a}
+.pill:hover{border-color:#ffce3a;color:#ffce3a}
+.toclink:hover{color:#ffce3a;border-left-color:#ffce3a}
+
+/* Respect reduced-motion: stop the loops, and reveal anything that fades in */
+@media (prefers-reduced-motion: reduce){
+  .anim-road,.anim-drive{animation:none !important}
+  [style*="fadeUp"]{opacity:1 !important;animation:none !important}
+}

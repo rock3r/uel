@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Unenshittifiable License — UEL v1.0</title>
+<meta name="description" content="The Unenshittifiable License, in full. Plain language first, lawyer-friendly underneath. Read it, copy it, drop it in your repo.">
+<meta property="og:title" content="The Unenshittifiable License — UEL v1.0">
+<meta property="og:description" content="Plain language first, lawyer-friendly underneath. Read it, copy it, drop it in your repo.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/goose_t.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div style="min-height:100vh;background:#13121b">
+
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(19,18,27,.86);backdrop-filter:blur(10px);border-bottom:2px solid #26242f">
+    <div style="max-width:1180px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px"><img src="assets/goose_t.png" alt="UEL warden goose" onclick="honk(event)" title="Honk!" style="height:38px;width:auto;cursor:pointer"><span style="font-family:'Gabarito',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em">UEL</span></a>
+      <div class="lab" style="display:flex;align-items:center;gap:6px;font-size:12px;letter-spacing:.1em">
+        <a href="index.html" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">Home</a>
+        <a href="compare.html" class="navlink" style="padding:9px 12px;color:#bdb8c9;border-radius:6px">Compare</a>
+      </div>
+    </div>
+  </nav>
+
+  <header style="position:relative;background-image:radial-gradient(rgba(255,255,255,.045) 1.2px,transparent 1.2px);background-size:24px 24px;background-position:center">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(42px,6vw,76px) 24px clamp(26px,3vw,38px)">
+      <div class="lab" style="opacity:0;animation:fadeUp .6s both;font-size:12.5px;letter-spacing:.18em;color:#8a849a">The actual license &nbsp;·&nbsp; <span style="color:#ffce3a">UEL v1.0</span></div>
+      <h1 style="opacity:0;animation:fadeUp .6s .08s both;font-family:'Gabarito',sans-serif;font-weight:800;font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:.98;letter-spacing:-.025em;margin:20px 0 0">The Unenshittifiable License</h1>
+      <p style="opacity:0;animation:fadeUp .6s .16s both;font-size:1.18rem;color:#bdb7c9;margin:18px 0 0;max-width:62ch;line-height:1.6">Plain language first, lawyer-friendly underneath. Read it, copy it, drop it in your repo. It's shorter than the terms you scrolled past this morning.</p>
+      <div style="opacity:0;animation:fadeUp .6s .24s both;display:flex;flex-wrap:wrap;gap:13px;margin-top:26px">
+        <button onclick="copyLicense(this)" class="btn-primary" style="display:inline-flex;align-items:center;gap:9px;padding:14px 24px;background:#ffce3a;color:#13121b;font-weight:800;font-size:1rem;border:none;border-radius:8px;cursor:pointer;box-shadow:4px 4px 0 #0a0912;transition:transform .15s,box-shadow .15s">
+          <span data-copy-icon style="display:inline-flex"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg></span>
+          <span data-copy-label>Copy license text</span>
+        </button>
+        <button onclick="downloadLicense()" class="btn-ghost" style="display:inline-flex;align-items:center;gap:9px;padding:14px 22px;background:transparent;color:#f2efe6;font-weight:700;font-size:1rem;border:2px solid #44414f;border-radius:8px;cursor:pointer;transition:.18s"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M12 3v12"></path><path d="M7 11l5 5 5-5"></path><path d="M4 20h16"></path></svg>Download LICENSE</button>
+      </div>
+    </div>
+    <div aria-hidden="true" style="height:42px;background:#1c1b26;border-top:2px solid #2b2935;border-bottom:2px solid #2b2935;position:relative;overflow:hidden"><div class="anim-road" style="position:absolute;top:50%;left:-128px;right:-128px;height:5px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,#ffce3a 0 40px,transparent 40px 88px)"></div></div>
+  </header>
+
+  <div style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,52px) 24px;display:flex;flex-wrap:wrap;gap:clamp(32px,4vw,56px);align-items:flex-start">
+
+    <aside style="flex:1 1 200px;max-width:240px;position:sticky;top:86px">
+      <div class="lab" style="font-size:11px;letter-spacing:.14em;color:#6f6982;margin-bottom:14px">Contents</div>
+      <nav style="display:flex;flex-direction:column;gap:2px;border-left:2px solid #26242f">
+        <a href="#spirit" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">00</span>The Spirit</a>
+        <a href="#definitions" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">01</span>Definitions</a>
+        <a href="#permissions" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">02</span>What You May Do</a>
+        <a href="#conditions" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">03</span>Conditions</a>
+        <a href="#limitations" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">04</span>What You May Not Do</a>
+        <a href="#branding" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">05</span>Branding &amp; Identity</a>
+        <a href="#contributions" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">06</span>Contributions</a>
+        <a href="#warranty" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">07</span>No Warranty</a>
+        <a href="#termination" class="toclink" style="display:flex;gap:10px;padding:8px 14px;margin-left:-2px;border-left:2px solid transparent;color:#a59fb2;font-size:.96rem;transition:.18s"><span style="color:#6f6982;font-weight:700;font-variant-numeric:tabular-nums">08</span>Termination</a>
+      </nav>
+    </aside>
+
+    <main style="flex:999 1 440px;min-width:0;max-width:720px;padding-bottom:70px">
+
+      <section id="spirit" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§00</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">The Spirit</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">This license is for software meant to stay useful to people — not to be quietly enclosed, paywalled, and made worse over time.</p>
+          <p style="margin:0 0 13px">Everything below is the legally-operative version of one simple promise: keep the commons open, and keep it out of the toll-booth business. Where the plain meaning and the legalese ever seem to disagree, the spirit wins.</p>
+        </div>
+      </section>
+
+      <section id="definitions" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§01</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">Definitions</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">“The Software” means the work distributed under this license, including its source, and any modified versions.</p>
+          <p style="margin:0 0 13px">“You” means any person or organisation exercising the rights granted here.</p>
+          <p style="margin:0 0 13px">“Commercial Offering” means providing the Software, or substantially the Software, to third parties for a fee, paid subscription, or paid access of any kind — including a hosted service, a paid edition, or a bundled commercial product.</p>
+          <p style="margin:0 0 13px">“Internal Use” means running the Software for yourself or your own organisation's own purposes, without offering it to third parties for a fee.</p>
+        </div>
+      </section>
+
+      <section id="permissions" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§02</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">What You May Do</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">You may read, study, and learn from the source. You may run it anywhere, for any non-prohibited purpose, including Internal Use at a company of any size.</p>
+          <p style="margin:0 0 13px">You may copy, modify, and fork it. You may self-host it for yourself or your community, forever, at no cost. If you distribute your modified versions, you must do so under this same license, with source.</p>
+          <p style="margin:0 0 13px">You may charge for your own time and expertise around the Software — installation, configuration, hosting setup, training, support, and consulting are all explicitly welcome.</p>
+        </div>
+      </section>
+
+      <section id="conditions" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§03</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">Conditions</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">Keep this license and the copyright notice intact in all copies and substantial portions of the Software.</p>
+          <p style="margin:0 0 13px">Distribute modified versions under this same license, with source. Improvements to the commons stay in the commons.</p>
+          <p style="margin:0 0 13px">State significant changes you made, so people can tell your fork from the original.</p>
+        </div>
+      </section>
+
+      <section id="limitations" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§04</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">What You May Not Do</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">You may not use the Software, or a substantially similar derivative, as the basis of a Commercial Offering. No paid clones, no selling access, no paid “Pro” editions, no bundling it into a product you charge for.</p>
+          <p style="margin:0 0 13px">You may not place the Software, or access to it, behind a paywall, subscription, advertising, or any other toll on the commons.</p>
+          <p style="margin:0 0 13px">These limits travel with the Software. You cannot relicense your way out of them.</p>
+        </div>
+      </section>
+
+      <section id="branding" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§05</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">Branding &amp; Identity</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">The code can be forked. The identity cannot be impersonated. You may truthfully describe your work as “based on” or “forked from” the original project.</p>
+          <p style="margin:0 0 13px">You may not present your fork as the official project, use its name or logo to imply endorsement, or pass off a derivative as the original.</p>
+        </div>
+      </section>
+
+      <section id="contributions" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§06</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">Contributions</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">Unless you say otherwise, anything you contribute back to the Software is offered under this same license, so it can benefit everyone who comes after you.</p>
+        </div>
+      </section>
+
+      <section id="warranty" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§07</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">No Warranty</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">The Software is provided “as is”, without warranty of any kind, express or implied. The authors are not liable for any claim, damages, or other liability arising from the Software or its use. It's a public park, not a managed service — enjoy it responsibly.</p>
+        </div>
+      </section>
+
+      <section id="termination" style="scroll-margin-top:86px;margin-bottom:46px">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #221f2c"><span class="lab" style="font-size:13px;color:#ffce3a;font-variant-numeric:tabular-nums">§08</span><h2 style="font-family:'Gabarito',sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:-.01em;margin:0">Termination</h2></div>
+        <div style="color:#c8c2d4;font-size:1.08rem;line-height:1.75">
+          <p style="margin:0 0 13px">If you violate these terms, your rights under this license end automatically. They are reinstated the moment you stop and put things right — the door back into the commons is always open.</p>
+        </div>
+      </section>
+
+      <div style="position:relative;margin-top:36px;padding:28px 30px;border:2px solid #ffce3a;border-radius:14px;background:#16151f;box-shadow:7px 7px 0 #0d0c15">
+        <img src="assets/goose_sit.png" alt="The warden goose, settled in" style="position:absolute;top:-92px;right:20px;height:120px;width:auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))">
+        <div class="lab" style="font-size:11px;letter-spacing:.16em;color:#8a849a;margin-bottom:8px">In one sentence</div>
+        <p style="font-family:'Gabarito',sans-serif;font-weight:600;font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.25;margin:0">Use it, fork it, learn from it, self-host it, improve it — just don't turn the commons into a toll booth.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer style="border-top:2px solid #26242f;background:#100f17">
+    <div style="max-width:1180px;margin:0 auto;padding:40px 24px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center">
+      <p style="font-size:13.5px;color:#6f6982;margin:0;line-height:1.8">No cookies · no trackers · no analytics. This page is itself shared under the UEL.</p>
+      <a href="index.html" class="lab pill" style="font-size:12px;letter-spacing:.1em;padding:10px 16px;border:1px solid #2e2c3a;border-radius:7px;color:#bdb8c9;transition:.18s">← Back to the park</a>
+    </div>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+<script>
+/* The canonical plaintext UEL — identical to the repo's LICENSE file. */
+var LICENSE_TEXT = [
+"THE UNENSHITTIFIABLE LICENSE (UEL) v1.0",
+"",
+"Use it. Fork it. Learn from it. Self-host it. Improve it.",
+"Just don't enshittify it.",
+"",
+"00. THE SPIRIT",
+"This license is for software meant to stay useful to people — not to be quietly enclosed, paywalled, and made worse over time.",
+"Everything below is the legally-operative version of one simple promise: keep the commons open, and keep it out of the toll-booth business. Where the plain meaning and the legalese ever seem to disagree, the spirit wins.",
+"",
+"01. DEFINITIONS",
+"“The Software” means the work distributed under this license, including its source, and any modified versions.",
+"“You” means any person or organisation exercising the rights granted here.",
+"“Commercial Offering” means providing the Software, or substantially the Software, to third parties for a fee, paid subscription, or paid access of any kind — including a hosted service, a paid edition, or a bundled commercial product.",
+"“Internal Use” means running the Software for yourself or your own organisation's own purposes, without offering it to third parties for a fee.",
+"",
+"02. WHAT YOU MAY DO",
+"You may read, study, and learn from the source. You may run it anywhere, for any non-prohibited purpose, including Internal Use at a company of any size.",
+"You may copy, modify, and fork it. You may self-host it for yourself or your community, forever, at no cost. If you distribute your modified versions, you must do so under this same license, with source.",
+"You may charge for your own time and expertise around the Software — installation, configuration, hosting setup, training, support, and consulting are all explicitly welcome.",
+"",
+"03. CONDITIONS",
+"Keep this license and the copyright notice intact in all copies and substantial portions of the Software.",
+"Distribute modified versions under this same license, with source. Improvements to the commons stay in the commons.",
+"State significant changes you made, so people can tell your fork from the original.",
+"",
+"04. WHAT YOU MAY NOT DO",
+"You may not use the Software, or a substantially similar derivative, as the basis of a Commercial Offering. No paid clones, no selling access, no paid “Pro” editions, no bundling it into a product you charge for.",
+"You may not place the Software, or access to it, behind a paywall, subscription, advertising, or any other toll on the commons.",
+"These limits travel with the Software. You cannot relicense your way out of them.",
+"",
+"05. BRANDING & IDENTITY",
+"The code can be forked. The identity cannot be impersonated. You may truthfully describe your work as “based on” or “forked from” the original project.",
+"You may not present your fork as the official project, use its name or logo to imply endorsement, or pass off a derivative as the original.",
+"",
+"06. CONTRIBUTIONS",
+"Unless you say otherwise, anything you contribute back to the Software is offered under this same license, so it can benefit everyone who comes after you.",
+"",
+"07. NO WARRANTY",
+"The Software is provided “as is”, without warranty of any kind, express or implied. The authors are not liable for any claim, damages, or other liability arising from the Software or its use. It's a public park, not a managed service — enjoy it responsibly.",
+"",
+"08. TERMINATION",
+"If you violate these terms, your rights under this license end automatically. They are reinstated the moment you stop and put things right — the door back into the commons is always open.",
+"",
+"In one sentence: keep the commons open, and keep it out of the toll-booth business.",
+""
+].join("\n");
+
+var CHECK_SVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 13l4 4L19 7"></path></svg>';
+var COPY_SVG = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>';
+
+function copyLicense(btn){
+  var icon = btn.querySelector("[data-copy-icon]");
+  var label = btn.querySelector("[data-copy-label]");
+  var show = function(){
+    icon.innerHTML = CHECK_SVG;
+    label.textContent = "Copied to clipboard";
+    setTimeout(function(){ icon.innerHTML = COPY_SVG; label.textContent = "Copy license text"; }, 1800);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(LICENSE_TEXT).then(show, show);
+  } else {
+    var ta = document.createElement("textarea");
+    ta.value = LICENSE_TEXT;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    show();
+  }
+}
+
+function downloadLicense(){
+  var blob = new Blob([LICENSE_TEXT], { type: "text/plain" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = "LICENSE";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+}
+</script>
+</body>
+</html>
