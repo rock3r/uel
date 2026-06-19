@@ -14,7 +14,7 @@ a{color:inherit;text-decoration:none}
 
 /* Animated dividers */
 .anim-road{animation:roadmove 6s linear infinite}
-.anim-drive{animation:drive 30s linear infinite;will-change:transform}
+.anim-drive{animation:drive 30s linear 30s infinite backwards;will-change:transform}
 
 /* Hover behaviours (were `style-hover` in the design prototype) */
 .navlink{transition:.18s}
